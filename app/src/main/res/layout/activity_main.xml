@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/centerhorizontalline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/centerverticalline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <com.synnapps.carouselview.CarouselView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/carousel"
+        app:slideInterval="5000"
+        android:background="@drawable/card"
+        app:strokeWidth="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+    </com.synnapps.carouselview.CarouselView>
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carousel"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/colfaxbold"
+        android:text="Good Day!"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/colfaxregular"
+        android:text="Treat yourself with these dinner specials!"
+        android:textColor="@color/black"
+        android:textSize="14sp">
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/centerhorizontalline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toStartOf="@id/centerverticalline" >
+
+        <ImageView
+            android:id="@+id/featured"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/featured">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="@font/colfaxbold"
+            android:text="Featured"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/centerhorizontalline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="50dp"
+            android:layout_toEndOf="@id/centerverticalline"
+            >
+
+            <ImageView
+                android:id="@+id/burger"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/burger">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="17dp"
+                android:fontFamily="@font/colfaxbold"
+                android:text="Burger"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/centerhorizontalline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="50dp"
+            android:layout_toStartOf="@id/centerverticalline" >
+
+            <ImageView
+                android:id="@+id/chicken"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/chicken">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="17dp"
+                android:fontFamily="@font/colfaxbold"
+                android:text="Chicken"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/centerhorizontalline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-99dp"
+            android:layout_marginBottom="50dp"
+            android:layout_toEndOf="@id/centerverticalline" >
+
+            <ImageView
+                android:id="@+id/group"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/group">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="17dp"
+                android:fontFamily="@font/colfaxbold"
+                android:text="Group Meals"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+
+</RelativeLayout>
